@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Satoshi-Light';
+    color: white;
+    background-color: #1a1a1a;
+    letter-spacing: 1px;
+}
+.btn-grey{
+    background-color: #767676;
+}
+ol,ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbar a img{
+    width:60px;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #ededed8b;
+}
+a:hover{
+    color:#ededed8b;
+}
+.form-control:focus{
+    box-shadow:none;
+    border-color:#ededed8b;
+}
+a{
+    transition: 0.5s;
+}
+.nav{
+    transition: 0.5s;
+}
+.navbar-nav{
+    --bs-nav-link-hover-color:none;
+}

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dash UI - Next.Js Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/icon.png" rel="icon">
+    <!-- icons link -->
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <!-- fonts css -->
+    <link href="assets/css/fonts.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.scss" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+</head>
+
+<body>
+    <div class="main">
+
+
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="assets/img/logo.svg"></a>
+            </div>
+            <div class="icon d-flex align-center">
+                <i class="fa-solid fa-house"></i>
+                <h4>Dashboard</h4>
+            </div>
+            <h5>LAYOUTS & PAGES</h5>
+            <ul id="accordion" class="accordion">
+                <li>
+                    <div class="link"><i class="fa-solid fa-layer-group"></i>Pages<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">404 Error</a></li>
+
+                    </ul>
+                </li>
+                <li class="default open">
+                    <div class="link"><i class="fa-solid fa-lock"></i>Authentication<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Forget Password</a></li>
+                    </ul>
+                </li>
+                <li class="default open">
+                    <div class="link"><i class="fa-solid fa-file-lines"></i>Layouts</div>
+                </li>
+                <h5>UI COMPONENTS</h5>
+                <li>
+                    <div class="link"><i class="fa-solid fa-desktop"></i>Components<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="#">Accordian</a></li>
+                        <li><a href="#">Alerts</a></li>
+                        <li><a href="#">Badges</a></li>
+                        <li><a href="#">Breadcrumbs</a></li>
+                        <li><a href="#">Buttons</a></li>
+                        <li><a href="#">Button Group</a></li>
+                        <li><a href="#">Cards</a></li>
+                        <li><a href="#">Carousel</a></li>
+                        <li><a href="#">Close Button</a></li>
+                        <li><a href="#">Collapse</a></li>
+                        <li><a href="#">Dropdowns</a></li>
+                        <li><a href="#">Listgroup</a></li>
+                        <li><a href="#">Modal</a></li>
+                        <li><a href="#">Navs</a></li>
+                        <li><a href="#">Navbar</a></li>
+                        <li><a href="#">Offcanvas</a></li>
+                        <li><a href="#">Overlays</a></li>
+                        <li><a href="#">Pagination</a></li>
+                        <li><a href="#">Popovers</a></li>
+                        <li><a href="#">Progress</a></li>
+                        <li><a href="#">Spinners</a></li>
+                        <li><a href="#">Tables</a></li>
+                        <li><a href="#">Tosts</a></li>
+                        <li><a href="#">Tooltips</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa-solid fa-arrow-turn-down"></i>Menu Level<i
+                            class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="#">Two Level</a></li>
+                        <li><a href="#">Three Level</a></li>
+                    </ul>
+                </li>
+                <h5>DOCUMENTATION</h5>
+                <li>
+                    <div class="link"><i class="fa-solid fa-book"></i>Docs</div>
+                </li>
+                <li>
+                    <div class="link"><i class="fa-solid fa-circle-nodes"></i>Changelog</div>
+                </li>
+                <li>
+                    <div class="link"><i class="fa-solid fa-download"></i>Download</div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="main-content">
+            <div class="top-navbar d-flex">
+                <div class="w-6 d-flex align-center">
+                    <div class="toggle">
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                    <div class="pseudo-search">
+                        <input type="text" placeholder="Search..." autofocus required>
+                    </div>
+                </div>
+
+                <div class="w-6 d-flex justify-end">
+                    <div class="navbar-end">
+                        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+                        <div class="navbar d-flex align-center">
+                            <div class="navbar_right">
+                                <div class="notifications">
+                                    <div class="icon_wrap d-flex align-center"><i class="far fa-bell"></i></div>
+
+                                    <div class="notification_dd">
+                                        <ul class="notification_ul">
+                                            <li class="starbucks success">
+                                                <div class="notify_icon">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <div class="notify_data">
+                                                    <div class="title">
+                                                        Lorem, ipsum dolor.
+                                                    </div>
+                                                    <div class="sub_title">
+                                                        Lorem ipsum dolor sit amet consectetur.
+                                                    </div>
+                                                </div>
+                                                <div class="notify_status">
+                                                    <p>Success</p>
+                                                </div>
+                                            </li>
+                                            <li class="baskin_robbins failed">
+                                                <div class="notify_icon">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <div class="notify_data">
+                                                    <div class="title">
+                                                        Lorem, ipsum dolor.
+                                                    </div>
+                                                    <div class="sub_title">
+                                                        Lorem ipsum dolor sit amet consectetur.
+                                                    </div>
+                                                </div>
+                                                <div class="notify_status">
+                                                    <p>Failed</p>
+                                                </div>
+                                            </li>
+                                            <li class="mcd success">
+                                                <div class="notify_icon">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <div class="notify_data">
+                                                    <div class="title">
+                                                        Lorem, ipsum dolor.
+                                                    </div>
+                                                    <div class="sub_title">
+                                                        Lorem ipsum dolor sit amet consectetur.
+                                                    </div>
+                                                </div>
+                                                <div class="notify_status">
+                                                    <p>Success</p>
+                                                </div>
+                                            </li>
+                                            <li class="pizzahut failed">
+                                                <div class="notify_icon">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <div class="notify_data">
+                                                    <div class="title">
+                                                        Lorem, ipsum dolor.
+                                                    </div>
+                                                    <div class="sub_title">
+                                                        Lorem ipsum dolor sit amet consectetur.
+                                                    </div>
+                                                </div>
+                                                <div class="notify_status">
+                                                    <p>Failed</p>
+                                                </div>
+                                            </li>
+                                            <li class="kfc success">
+                                                <div class="notify_icon">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <div class="notify_data">
+                                                    <div class="title">
+                                                        Lorem, ipsum dolor.
+                                                    </div>
+                                                    <div class="sub_title">
+                                                        Lorem ipsum dolor sit amet consectetur.
+                                                    </div>
+                                                </div>
+                                                <div class="notify_status">
+                                                    <p>Success</p>
+                                                </div>
+                                            </li>
+                                            <li class="show_all">
+                                                <p class="link">Show All Activities</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup">
+                            <div class="shadow"></div>
+                            <div class="inner_popup">
+                                <div class="notification_dd">
+                                    <ul class="notification_ul">
+                                        <li class="title">
+                                            <p>All Notifications</p>
+                                            <p class="close"><i class="fas fa-times" aria-hidden="true"></i></p>
+                                        </li>
+                                        <li class="starbucks success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="baskin_robbins failed">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Failed</p>
+                                            </div>
+                                        </li>
+                                        <li class="mcd success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="pizzahut failed">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Failed</p>
+                                            </div>
+                                        </li>
+                                        <li class="kfc success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <nav>
+
+
+
+
+
+
+                            <div class="profile">
+                                <div class="img-box">
+                                    <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image">
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project d-flex align-center justify-between">
+                <h2>Projects</h2>
+                <a href="#">Creat New Project</a>
+            </div>
+            <div class="w-12 project-main d-flex">
+                <div class="w-12 py-12 w-md-6 w-xl-3">
+                    <div class="project-box">
+                        <div class="project-content d-flex align-center justify-between">
+                            <h3>Active Task</h3>
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z">
+                                    </path>
+                                    <path
+                                        d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z">
+                                    </path>
+                                    <path fill-rule="evenodd"
+                                        d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h2>132</h2>
+                        <p>28 Completed</p>
+                    </div>
+                </div>
+                <div class="w-12 py-12 w-md-6 w-xl-3">
+                    <div class="project-box">
+                        <div class="project-content d-flex align-center justify-between">
+                            <h3>Projects</h3>
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
+                                    fill="currentColor">
+                                    <path
+                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h2>18</h2>
+                        <p>2 Completed</p>
+                    </div>
+                </div>
+                <div class="w-12 py-12 w-md-6 w-xl-3">
+                    <div class="project-box">
+                        <div class="project-content d-flex align-center justify-between">
+                            <h3>Teams</h3>
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
+                                    fill="currentColor">
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h2>12</h2>
+                        <p>1 Completed</p>
+                    </div>
+                </div>
+                <div class="w-12 py-12 w-md-6 w-xl-3">
+                    <div class="project-box">
+                        <div class="project-content d-flex align-center justify-between">
+                            <h3>Projects</h3>
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
+                                    fill="currentColor">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                    </path>
+                                    <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z">
+                                    </path>
+                                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z">
+                                    </path>
+                                    <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h2>76%</h2>
+                        <p>5% Completed</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="active-project">
+                <h2>Active Projects</h2>
+                <table cellspacing="0">
+                    <tr>
+                        <td>Project Name</td>
+                        <td>Hours</td>
+                        <td>Priority</td>
+                        <td>Members</td>
+                        <td>Progress</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-center">
+                            <div class="img">
+                                <img src="assets/img/dropbox-logo.svg">
+                            </div>
+                            Dropbox Design System
+                        </div>
+                        </td>
+                        <td>34</td>
+                        <td><span>Medium</span></td>
+                        <td>
+                            <div class="members">
+                                <img src="assets/img/avatar-1.jpg">
+                                <img src="assets/img/avatar-2.jpg">
+                                <img src="assets/img/avatar-3.jpg">
+                                <div class="box">+5</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="progress-bar d-flex align-center">
+                                <p>15%</p>
+                                <div class="progress">
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="ui-design">
+                        <td>
+                            <div class="d-flex align-center">
+                            <div class="img">
+                                <img src="assets/img/slack-logo.svg">
+                            </div>
+                            Slack Team UI Design
+                        </div>
+                        </td>
+                        <td>47</td>
+                        <td><span>High</span></td>
+                        <td>
+                            <div class="members">
+                                <img src="assets/img/avatar-4.jpg">
+                                <img src="assets/img/avatar-5.jpg">
+                                <img src="assets/img/avatar-6.jpg">
+                                <div class="box">+5</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="progress-bar d-flex align-center">
+                                <p>35%</p>
+                                <div class="progress">
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="github">
+                        <td>
+                            <div class="d-flex align-center">
+                            <div class="img">
+                                <img src="assets/img/github-logo.svg">
+                            </div>
+                            GitHub Satellite
+                        </div>
+                        </td>
+                        <td>120</td>
+                        <td><span>Low</span></td>
+                        <td>
+                            <div class="members">
+                                <img src="assets/img/avatar-7.jpg">
+                                <img src="assets/img/avatar-8.jpg">
+                                <img src="assets/img/avatar-9.jpg">
+                                <div class="box">+5</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="progress-bar d-flex align-center">
+                                <p>75%</p>
+                                <div class="progress">
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="d3">
+                        <td>
+                            <div class="d-flex align-center">
+                            <div class="img">
+                                <img src="assets/img/3dsmax-logo.svg">
+                            </div>
+                            3D Character Modelling
+                        </div>
+                        </td>
+                        <td>89</td>
+                        <td><span>Medium</span></td>
+                        <td>
+                            <div class="members">
+                                <img src="assets/img/avatar-10.jpg">
+                                <img src="assets/img/avatar-11.jpg">
+                                <img src="assets/img/avatar-12.jpg">
+                                <div class="box">+5</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="progress-bar d-flex align-center">
+                                <p>63%</p>
+                                <div class="progress">
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="webapp">
+                        <td>
+                            <div class="d-flex align-center">
+                            <div class="img">
+                                <img src="assets/img/layers-logo.svg">
+                            </div>
+                            Webapp Design System
+                        </div>
+                        </td>
+                        <td>108</td>
+                        <td><span>Track</span></td>
+                        <td>
+                            <div class="members">
+                                <img src="assets/img/avatar-13.jpg">
+                                <img src="assets/img/avatar-14.jpg">
+                                <img src="assets/img/avatar-15.jpg">
+                                <div class="box">+5</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="progress-bar d-flex align-center">
+                                <p>100%</p>
+                                <div class="progress">
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="event">
+                        <td>
+                            <div class="d-flex align-center">
+                            <div class="img">
+                                <img src="assets/img/github-logo.svg">
+                            </div>
+                            Github Event Design
+                        </div>
+                        </td>
+                        <td>120</td>
+                        <td><span>Low</span></td>
+                        <td>
+                            <div class="members">
+                                <img src="assets/img/avatar-16.jpg">
+                                <img src="assets/img/avatar-17.jpg">
+                                <img src="assets/img/avatar-18.jpg">
+                                <div class="box">+5</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="progress-bar d-flex align-center">
+                                <p>75%</p>
+                                <div class="progress">
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <h3>View All Projects</h3>
+            </div>
+
+            <div class="performance d-flex">
+                <div class="w-12 w-xl-4">
+                    <div class="chart-box">
+                        <div class="title d-flex justify-between align-center">
+                            <h2>Tasks Performance</h2>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div id="chart"></div>
+                        <ul class="d-flex justify-between">
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h2>76%</h2>
+                                <p>Completed</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <h2>32%</h2>
+                                <p>In-Progress</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-arrow-trend-down"></i>
+                                <h2>13%</h2>
+                                <p>Behind</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-12 w-xl-8">
+                    <div class="teams">
+                        <h2>Teams</h2>
+                        <table cellspacing="0">
+                            <tr>
+                                <td>Name</td>
+                                <td>Role</td>
+                                <td>Last Activity</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex align-center">
+                                    <div class="img">
+                                        <img src="assets/img/avatar-2.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Anita Parmar</h3>
+                                        <p>anita@example.com</p>
+                                    </div>
+                                </td>
+                                <td>Front End Developer</td>
+                                <td>3 May, 2023 </td>
+                                <td><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex align-center">
+                                    <div class="img">
+                                        <img src="assets/img/avatar-1.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Jitu Chauhan</h3>
+                                        <p>jituchauhan@example.com</p>
+                                    </div>
+                                </td>
+                                <td>Project Director</td>
+                                <td>Today </td>
+                                <td><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex align-center">
+                                    <div class="img">
+                                        <img src="assets/img/avatar-3.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Sandeep Chauhan</h3>
+                                        <p>sandeepchauhan@example.com</p>
+                                    </div>
+                                </td>
+                                <td>Full-Stack Developer</td>
+                                <td>Yesterday</td>
+                                <td><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex align-center">
+                                    <div class="img">
+                                        <img src="assets/img/avatar-4.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Amanda Darnell</h3>
+                                        <p>amandadarnell@example.com</p>
+                                    </div>
+                                </td>
+                                <td>Account Manager</td>
+                                <td>3 May, 2023</td>
+                                <td><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex align-center">
+                                    <div class="img">
+                                        <img src="assets/img/avatar-5.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Patricia Murrill</h3>
+                                        <p>patriciamurrill@example.com</p>
+                                    </div>
+                                </td>
+                                <td>Digital Marketer</td>
+                                <td>3 May, 2023</td>
+                                <td><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex align-center">
+                                    <div class="img">
+                                        <img src="assets/img/avatar-6.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Darshini Nair</h3>
+                                        <p>darshininair@example.com</p>
+                                    </div>
+                                </td>
+                                <td>Front End Developer</td>
+                                <td>3 May, 2023</td>
+                                <td><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="d-flex justify-between align-center">
+                <h2>Made by <a href="#">Codescandy</a></h2>
+                <p>Destributed by <a href="#">ThemeWagon</a></p>
+            </footer>
+
+        </div>
+
+        
+
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script>
+            let profile = document.querySelector('.profile');
+            let menu = document.querySelector('.menu');
+
+            profile.onclick = function () {
+                menu.classList.toggle('active');
+            }
+        </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(".profile .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".notifications").removeClass("active");
+            });
+
+            $(".notifications .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".profile").removeClass("active");
+            });
+
+            $(".show_all .link").click(function () {
+                $(".notifications").removeClass("active");
+                $(".popup").show();
+            });
+
+            $(".close, .shadow").click(function () {
+                $(".popup").hide();
+            });
+        </script>
+
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            $(function () {
+                var Accordion = function (el, multiple) {
+                    this.el = el || {};
+                    this.multiple = multiple || false;
+
+                    // Variables privadas
+                    var links = this.el.find('.link');
+                    // Evento
+                    links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+                }
+
+                Accordion.prototype.dropdown = function (e) {
+                    var $el = e.data.el;
+                    $this = $(this),
+                        $next = $this.next();
+
+                    $next.slideToggle();
+                    $this.parent().toggleClass('open');
+
+                    if (!e.data.multiple) {
+                        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                    };
+                }
+
+                var accordion = new Accordion($('#accordion'), false);
+            });
+        </script>
+
+
+        <script>
+            window.Promise ||
+                document.write(
+                    '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+                )
+            window.Promise ||
+                document.write(
+                    '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+                )
+            window.Promise ||
+                document.write(
+                    '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+                )
+        </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+        <script>
+            // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
+            // Based on https://gist.github.com/blixt/f17b47c62508be59987b
+            var _seed = 42;
+            Math.random = function () {
+                _seed = _seed * 16807 % 2147483647;
+                return (_seed - 1) / 2147483646;
+            };
+        </script>
+
+
+
+
+        <script>
+
+            var options = {
+                series: [76, 32, 13],
+                chart: {
+                    height: 350,
+                    type: 'radialBar',
+                },
+                plotOptions: {
+                    radialBar: {
+                        dataLabels: {
+                            name: {
+                                fontSize: '22px',
+                            },
+                            value: {
+                                fontSize: '16px',
+                            },
+                            total: {
+                                show: true,
+                                label: 'Total',
+                                formatter: function (w) {
+                                    // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                                    return 249
+                                }
+                            }
+                        }
+                    }
+                },
+                labels: ['Completed', 'In-Progress', 'Behind'],
+            };
+
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+
+
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $(".toggle").click(function(){
+                    $(".sidebar").toggleClass("sidebar-edit");
+                    $(".main-content").toggleClass("main-content-edit");
+                });
+            });
+        </script>
+
+
+</body>
+
+</html>
